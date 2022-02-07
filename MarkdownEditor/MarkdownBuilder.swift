@@ -41,7 +41,7 @@ fileprivate struct StrikethroughBuilder: MarkdownBuilder {
 }
 
 fileprivate struct LinkBuilder: MarkdownBuilder {
-  public var style: String { "[Link](link)" }
+  public var style: String { "[Link]" }
   
   public func build(from text: String) -> String { "[\(text)](https://github.com)"}
 }
